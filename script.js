@@ -33,7 +33,7 @@ jQuery(function($){
 					analizeText(i, value, index);
 				} else {
 					if (index == 'empty') { passed = ' Auto test - Passed'; }
-					$('#output .results').append("<br>Teksts netika ievadīts!" + passed + "<br>");
+					$('#output .results').append("<br>Iedade: <i>" + value + " </i><br>Teksts netika ievadīts!" + passed + "<br>");
 				}
 				$('.output-box').show();
 			});
@@ -106,14 +106,14 @@ jQuery(function($){
 					});
 				}
 			}
-			output = output + '<br>Tekstā sastopami ' + count + ' burti' + passed + '<br>';
+			output = output + '<br>Iedade: <i>' + text + ' </i><br>Tekstā sastopami ' + count + ' burti' + passed + '<br>';
 			output = output + '<div style="display: inline-block; width: 35px; text-align: center;">Burts</div> : <div style="display: inline-block; width: 75px; text-align: center;">Sastopams</div> : <div style="display: inline-block; width: 80px; text-align: center;">Procentuāli</div><br>';
 			$.each(charsUsed, function(index, value){
 				var perc = parseFloat(chars[value]) / count * 100.0;
 				output = output + '<div style="display: inline-block; width: 35px; text-align: center;">' + value + '</div>' + " : " + '<div style="display: inline-block; width: 75px; text-align: center;">' + chars[value] + '</div>' + " : " + '<div style="display: inline-block; width: 80px; text-align: right;">' + perc.toFixed(2) + '%</div><br>';
 			});
 			if (count == 0) {
-				output = "<br>Teksts nesatur burtus!" + passed + "<br>";
+				output = "<br>Iedade: <i>" + text + " </i><br>Teksts nesatur burtus!" + passed + "<br>";
 			}
 			$('#output .results').append(output);
 			return;

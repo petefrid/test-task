@@ -1,0 +1,8 @@
+Atver index.html pārlūkā
+Ievada tekstu (piemēra teksts - example.txt failā)
+Klikšķina uz "Pārbaudīt" pogas
+Tiek izvadīts rezultāts uz ekrāna
+
+Atver index.html pārlūkā
+Klikšķina uz "Auto test" pogas
+Tiek izvadīts rezultāts uz ekrāna par automātskajiem testiem
