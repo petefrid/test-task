@@ -5,7 +5,7 @@ jQuery(function($){
 			$('#output .original-text').html(text);
 
 			var i = text.length;
-			if (i == 0) {
+			if (i > 0) {
 				analizeText(i, text);
 			} else {
 				$('#output .results').append("<br>Teksts netika ievadīts!");
